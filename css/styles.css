@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #212121;
+  background-color:#1c1c1c;
   font-family: 'Montserrat', sans-serif;
   color: #f3f4ed;
 }
@@ -8,7 +8,9 @@ body {
 .menu, .main-section, .about ,section{
     padding: 3% 7%;
 }
-
+.logo, .flogo{
+	border-radius:8px;
+}
 .logo {
   width: 8%;
   height: auto;
@@ -86,7 +88,7 @@ body {
 }
 .swiper-slide-active{
   filter: blur(0px);
-  box-shadow:0 15px 50px rgba(0,0,0,0.2);  
+  box-shadow:0 15px 30px rgba(0,0,0,0.2);  
 }
 .info{
 	position: relative;

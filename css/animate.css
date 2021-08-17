@@ -1,41 +1,36 @@
-.main-img, .variants-head
-{position:relative;
-opacity:0;
-animation: slide-in-left 3s ease-in-out both;
-}.main-head{
-	opacity:0;
+.main-img.is-visible, .variants-head.is-visible{
+	position:relative;
+	animation: slide-in-left 3s ease-in-out both;
+}
+.main-head.is-visible{
 	animation: zoom-in-zoom-out 2s ease-out ;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
 }
-.alter-about{
-	opacity:0 ;
+.alter-about.is-visible{
 	animation:slide-down 5s ease-out ;
-	animation-iteration-count:2;
+	animation-iteration-count:1;
 }
-.alter-para{
-	opacity:0;
-	animation: fadein 8s ease-out;
-	animation-iteration-count: 2;
-	animation-delay: 0.5s;
+.variants-head.is-visible , .variants.is-visible{
+	animation: appear 2s ease-in;
 }
-.variants-head{
-	opacity:0;
-	animation: slide-in-left 3s ease-in-out both;
-	animation-delay: 3s;
+.grid-item.is-visible{
+	animation: fadein 2s ease-in-out both;
 }
-.features{
-	opacity:0;
+.features.is-visible{
 	animation: slide-down 2s ease-out ;
     animation-iteration-count: 1;
-    animation-delay: 8s;
+    animation-delay: 0.5s;
 }
 .alter-para.is-visible{
-	opacity:0.6;
+	animation: fadein 3s ease-in-out both;
+	animation-delay: 0.5s;
 }
-.main-img.is-visble,.main-head.is-visible,.alter-about.is-visible, .features.is-visible{
-	opacity:1;
+.col-sm-4.is-visible{
+	animation: appear 2s ease-in-out both;
+	animation-delay:0.5s;
 }
+
 
 @keyframes zoom-in-zoom-out {
   0% {
@@ -72,6 +67,14 @@ animation: slide-in-left 3s ease-in-out both;
   }
 }
 @keyframes fadein{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:0.7;
+	}
+}
+@keyframes appear{
 	0%{
 		opacity:0;
 	}
